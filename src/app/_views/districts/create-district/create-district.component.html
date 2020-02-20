@@ -1,0 +1,27 @@
+<form [formGroup] = "districtForm" (ngSubmit) = "submit()"> 
+    <div class = "container">
+        <div>
+            <h4>Add Disctrict</h4>
+        </div>
+
+    <div class="form-group">
+      <label for="name" class="col-sm-2 col-form-label">District name</label>
+      <input type="text" class="form-control" id="ward" placeholder="Enter enter district name">
+    </div>
+    <div class="form-group">
+        <label for="name" class="col-sm-2 col-form-label">Town Name</label>
+        <input type="text" class="form-control" id="district" placeholder="Enter Town/City name">
+      </div>
+  
+    <div class="form-group">
+         <label for="name" class="col-sm-2 col-form-label">Province Name</label>
+          <input type="text" class="form-control" id="province" placeholder="Enter Province name">
+    </div>
+    <div class="form-group">
+        <label for="name" class="col-sm-2 col-form-label">Country</label>
+        <input type="text" class="form-control" id="country" placeholder="Enter Country">
+    </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+      </form>
+

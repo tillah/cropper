@@ -1,0 +1,671 @@
+// If you want to override variables do it here
+@import "variables";
+
+// Import styles with default layout.
+// If you are going to use dark layout please comment next line
+@import "node_modules/@coreui/coreui-pro/scss/coreui";
+
+// Import styles with dark layout
+// If you want to use dark layout uncomment next line
+// @import "node_modules/@coreui/coreui-pro/scss/themes/dark/coreui-dark";
+
+// If you want to add something do it here
+@import "custom";
+
+.table {
+  margin-top: 1rem !important;
+}
+
+.page-link {
+  border: 0px solid #c8ced3;
+}
+
+.pagination {
+  justify-content: center;
+}
+
+.no-table-data {
+  text-align: center !important;
+  color: #ff0000;
+}
+
+.form-control {
+  height: 30px !important;
+  border: 1px solid #cccccc !important;
+  border-radius: 0 !important;
+}
+
+.card {
+  border-radius: 0.0rem;
+}
+
+label {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  font-family: "Nunito" !important;
+  font-weight: 700 !important;
+  font-size: 13px !important;
+  margin-bottom: 0px !important;
+}
+
+.card-header {
+  padding: 1.75rem 1rem 1.5rem 1rem;
+  margin-bottom: 0;
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
+  font-size: 18px;
+}
+
+.card-footer {
+  padding: 0.25rem 0rem 0rem 0rem !important;
+  background-color: transparent;
+  border-top: 1px solid transparent;
+}
+
+h5 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.card-header {
+  padding: 1.75rem 1.25rem 0rem 1.25rem;
+  margin-bottom: 0;
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
+  font-size: 18px;
+}
+
+.btn {
+  border-radius: 0 !important;
+}
+
+.card-body {
+  -webkit-box-flex: 1;
+  flex: 1 1 auto;
+  padding: 0 1.25rem 1.25rem 1.25rem;
+}
+
+.form-control {
+  padding: 0rem 0.75rem !important;
+}
+
+tbody tr:last-child { border-bottom: 2px solid #dee2e6; }
+
+//// If you want to override variables do it here
+//@import "variables";
+//@import '~perfect-scrollbar/css/perfect-scrollbar.css';
+//// Import styles with default layout.
+//// If you are going to use dark layout please comment next line
+//@import "../../node_modules/@coreui/coreui-pro/scss/coreui";
+//@import "../../node_modules/ngx-bootstrap/datepicker/bs-datepicker.css";
+//@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+//// Import styles with dark layout
+//// If you want to use dark layout uncomment next line
+//// @import "../../node_modules/@coreui/coreui-pro/scss/themes/dark/coreui-dark";
+//
+//// If you want to add something do it here
+//@import "custom";
+//
+//@font-face {
+//  font-family: 'Socicon';
+//  src: url('../assets/fonts/Socicon.eot?484r1f');
+//  src: url('../assets/fonts/Socicon.eot?484r1f#iefix') format('embedded-opentype'),
+//  url('../assets/fonts/Socicon.woff2?484r1f') format('woff2'),
+//  url('../assets/fonts/Socicon.ttf?484r1f') format('truetype'),
+//  url('../assets/fonts/Socicon.woff?484r1f') format('woff'),
+//  url('../assets/fonts/Socicon.svg?484r1f#Socicon') format('svg');
+//  font-weight: normal;
+//  font-style: normal;
+//}
+//
+//@font-face {
+//  font-family: 'HelveticaNeueLT43LightEx';
+//  src: url('../assets/fonts/HelveticaNeueLT-LightExt.eot');
+//  src: url('../assets/fonts/HelveticaNeueLT-LightExt.eot?#iefix') format('embedded-opentype'),
+//  url('../assets/fonts/HelveticaNeueLT-LightExt.woff2') format('woff2'),
+//  url('../assets/fonts/HelveticaNeueLT-LightExt.woff') format('woff'),
+//  url('../assets/fonts/HelveticaNeueLT-LightExt.ttf') format('truetype'),
+//  url('../assets/fonts/HelveticaNeueLT-LightExt.svg#HelveticaNeueLT-LightExt') format('svg');
+//  font-weight: 300;
+//  font-style: normal;
+//}
+//
+//@font-face {
+//  font-family: 'HelveticaNeueLT57Cn';
+//  src: url('../assets/fonts/HelveticaNeueLT-Condensed.eot');
+//  src: url('../assets/fonts/HelveticaNeueLT-Condensed.eot?#iefix') format('embedded-opentype'),
+//  url('../assets/fonts/HelveticaNeueLT-Condensed.woff2') format('woff2'),
+//  url('../assets/fonts/HelveticaNeueLT-Condensed.woff') format('woff'),
+//  url('../assets/fonts/HelveticaNeueLT-Condensed.ttf') format('truetype'),
+//  url('../assets/fonts/HelveticaNeueLT-Condensed.svg#HelveticaNeueLT-Condensed') format('svg');
+//  font-weight: normal;
+//  font-style: normal;
+//}
+//
+//@font-face {
+//  font-family: 'eurostileregular';
+//  src: url('../assets/fonts/eurostile-webfont.woff2') format('woff2'),
+//  url('../assets/fonts/eurostile-webfont.woff') format('woff');
+//  font-weight: normal;
+//  font-style: normal;
+//}
+//
+//input .form-control {
+//  Color: #cccccc !important;
+//}
+//.detail-label {
+//  font-weight: bold;
+//  font-size: 12px;
+//}
+//.remove-td-border td {
+//  border-top: 1px solid transparent !important;
+//}
+//.form-control {
+//  height: 30px;
+//  -webkit-border-radius: 0px;
+//  -moz-border-radius: 0px;
+//  padding: 0rem 0.75rem;
+//  border-radius: 0px;
+//  border: 1px solid #ccc;
+//  color: #666666 !important;
+//}
+//#details-table-info tbody > tr:last-child > td {
+//  border-bottom: 2px solid #c8ced3;
+//}
+//.card {
+//  margin-bottom: 1.5rem !important;
+//}
+//.btn-warning {
+//  border: 1px solid #d39e00 !important;
+//  font-weight: 400;
+//  min-width: 100px;
+//}
+//.card-header:first-child {
+//  border-radius: calc(0rem - 1px) calc(0rem - 1px) 0 0;
+//}
+//
+//.modal-content {
+//  border-radius: 0rem !important;
+//  border-top: 1px solid #3ba1da;
+//  padding: 15px 0 !important;
+//  background-color: rgba(0, 0, 0, 0.5) !important;
+//}
+//
+//@media (min-width: 576px) {
+//  .modal-dialog {
+//    margin: 6rem auto !important;
+//  }
+//}
+//
+//
+//.card {
+//  border-radius: 0rem;
+//}
+//.col-form-label, label {
+//  padding-top: 0px;
+//  padding-bottom: 0px;
+//  font-family: 'Nunito';
+//  font-weight: 700;
+//  font-size: 13px !important;
+//}
+//
+//label {
+//  margin-bottom: 0rem !important;
+//}
+//.card-header {
+//  padding: 1.75rem 1rem 1.5rem 1rem;
+//  margin-bottom: 0;
+//  background-color: transparent;
+//  border-bottom: 1px solid transparent;
+//  font-size: 18px;
+//}
+//.card-footer {
+//  padding: 0.75rem 1.25rem 1.75rem 0rem;
+//  background-color: transparent;
+//  border-top: 1px solid transparent;
+//}
+//.btn-sm, .btn-group-sm > .btn {
+//  border-radius: 0rem;
+//}
+//.btn-primary {
+//  color: #fff;
+//  background-color: #277CB8;
+//  border-color: #277CB8;
+//  font-family: "Nunito";
+//  font-size: 1em;
+//  font-weight: 400;
+//  /* min-width: 100px; */
+//}
+//.btn-danger {
+//  color: #fff;
+//  //background-color: #277CB8;
+//  border-color: #f86c6b;
+//  font-family: 'Nunito';
+//  font-size: 1em;
+//  font-weight: 400;
+//  //min-width: 100px;
+//  //margin-left: 4px;
+//}
+//.main .container-fluid {
+//  padding: 0 10px;
+//}
+//h5 {
+//  margin-bottom: 1rem;
+//  font-family: inherit;
+//  font-weight: 500;
+//  line-height: 1.2;
+//  font-weight: normal;
+//  text-align: center;
+//  margin-top: 1rem;
+//}
+//.login-logo {
+//  height: 150px !important;
+//  margin-bottom: 15px;
+//}
+//app-login, app-user-registration, app-forgot-password, app-activate-account, app-reset-password, app-change-password {
+//  display: flex;
+//  flex-direction: column;
+//  min-height: 100vh;
+//}
+//.page-item:first-child .page-link {
+//  border-top-left-radius: 0rem;
+//  border-bottom-left-radius: 0rem;
+//}
+//.page-item:last-child .page-link {
+//  border-top-right-radius: 0rem;
+//  border-bottom-right-radius: 0rem;
+//}
+//.dropdown-menu {
+//  border-radius: 0px;
+//  font-size: 12px;
+//  min-width: 8rem !important;
+//  border-bottom: 1px solid transparent !important;
+//}
+//.dropdown-item {
+//  padding: 5px 20px;
+//  border-bottom: 1px solid #c8ced3 !important;
+//}
+//.dropdown-item:last-child {
+//  border-bottom-right-radius: 0px;
+//  border-bottom-left-radius: 0px;
+//}
+//.dropdown-item:first-child {
+//  border-top-left-radius: 0px;
+//  border-top-right-radius: 0px;
+//}
+//.no-table-data {
+//  text-align: center;
+//  font-weight: normal;
+//  color: #ff0000;
+//}
+//.form-control-no-border {
+//  color: #fff !important;
+//}
+//.page-link {
+//  border: 1px solid transparent !important;
+//}
+//.page-item.active .page-link {
+//  background-color: #3C3585 !important;
+//}
+//@media screen and (min-width: 576px) {
+//  .modal-dialog {
+//    max-width: 65%;
+//    margin: 1.75rem auto;
+//  }
+//}
+//h5 {
+//  margin-bottom: 1rem;
+//  font-family: inherit;
+//  font-weight: 500;
+//  line-height: 1.2;
+//  font-weight: normal;
+//  text-align: center;
+//  margin-top: 1rem;
+//}
+//
+//label {
+//  font-size: 1rem !important;
+//}
+//
+//body {
+//  background: url("./../assets/img/brand/pos.jpg") no-repeat fixed center center;
+//  -webkit-background-size: cover;
+//  -moz-background-size: cover;
+//  -o-background-size: cover;
+//  background-size: cover;
+//
+//  font-size: 14px !important;
+//  margin: 0;
+//  padding: 0;
+//  height: 100% !important;
+//  width: 100%;
+//  overflow: hidden;
+//  font-family: "HelveticaNeueLT57Cn" !important;
+//}
+//
+//@media (max-width: 991.98px) {
+//  .app-body {
+//    margin-top: 0px !important;
+//  }
+//}
+//
+//.admin-content-area {
+//  height: 100% !important;
+//}
+//
+//.component-header {
+//  font-weight: bold;
+//  font-family: 'Open Sans Condensed', sans-serif;
+//  font-size: 25px !important;
+//}
+//.login-message {
+//  color: #ffffff;
+//  font-family: Nunito;
+//  text-align: center !important;
+//}
+////========================================================
+//.card-footer {
+//  padding: 0.25rem 1.25rem 0rem 0rem !important;
+//  background-color: transparent;
+//  border-top: 1px solid transparent;
+//}
+//.card {
+//  margin-bottom: 0rem !important;
+//  //border: 1px solid transparent !important;
+//}
+//.page-content-padding {
+//  padding: 78px 0 60px 0;
+//}
+//.form-control {
+//  color: #fff !important;
+//}
+//label {
+//  color: #ffffff !important;
+//  font-weight: bold;
+//}
+//.card-header {
+//  padding: 1.75rem 1rem 1rem 1rem !important;
+//}
+////=======================================Pop up buttons================================
+//.btn {
+//  border-radius: 0rem !important;
+//}
+//.btn-primary {
+//  font-size: 13px;
+//}
+//.table-edit-btn {
+//  border-color: transparent !important;
+//  min-width: 0;
+//  color: #fff;
+//}
+//.btn-sm {
+//  font-size: 1em !important;
+//  padding: 0.0rem 0.35rem;
+//}
+//mat-form-field {
+//  width: 100% !important;
+//}
+//.mat-form-field {
+//  font-weight: bold !important;
+//  text-align: left !important;
+//}
+//.mat-form-field {
+//  width: 100% !important;
+//}
+//.mat-form-field-infix {
+//  font-family: eurostileregular !important;
+//}
+///* Border */
+//.mat-form-field-appearance-outline .mat-form-field-outline {
+//  color: white !important;
+//}
+///*.mat-form-field-appearance-legacy .mat-form-field-infix {*/
+///*    padding: .4375em 0;*/
+///*    border-bottom: 1px solid #fff;*/
+///*}*/
+//.mat-form-field-appearance-legacy .mat-form-field-underline {
+//  background-color: #fff;
+//}
+///* Font color */
+//input.mat-input-element {
+//  color: white;
+//}
+//
+//.mat-button, .mat-icon-button, .mat-stroked-button {
+//  color: #fff;
+//}
+//
+//.form-bottom-border {
+//  height: 1px;
+//  background-color: #ccc;
+//}
+//
+//.forgot-password-text {
+//  text-align: right;
+//  padding-top: 8px;
+//  color: #fff !important;
+//}
+//
+//.no-account-yet {
+//  padding-top: 5px !important;
+//  text-align: center !important;
+//  color: #fff !important;
+//}
+//
+//p a {
+//  color: #2c2661 !important;
+//}
+//
+//a:hover {
+//  text-decoration: none !important;
+//}
+//
+////.card {
+////  background-color: transparent !important;
+////}
+//
+//#dimScreen
+//{
+//  position:fixed;
+//  padding:0;
+//  margin:0;
+//
+//  top:0;
+//  left:0;
+//
+//  width: 100%;
+//  height: 100%;
+//  //background-color: #F48129 !important;
+//}
+//
+//.form-control {
+//  //background-color: #F48129;
+//}
+//
+//.have-an-account, .new-farmer, .back-to-sign-in {
+//  padding-top: 10px !important;
+//}
+//
+//.spinner-container {
+//  border: 1px solid #C1331B !important;
+//}
+//
+//ng-select > div {
+//  border: 1px solid #C1331B !important;
+//}
+//
+//.form-control:focus {
+//  //background-color: #F48129;
+//}
+//
+//select-dropdown>div {
+//  background-color: #F48129 !important;
+//  border: 1px solid #C1331B !important;
+//}
+//
+//select-dropdown>div .filter input {
+//  background-color: #F48129 !important;
+//  border: 1px solid #C1331B !important;
+//}
+//
+//ng-select>div>div.single>div.clear, ng-select>div>div.single>div.toggle {
+//  color: #C1331B !important;
+//}
+//
+//ng-select>div>div.single>div.placeholder {
+//  color: #C1331B !important;
+//}
+//
+//.multiselect-dropdown .dropdown-btn {
+//  border: 1px solid #C1331B !important;
+//  padding: 4px 12px !important;
+//  border-radius: 0px !important;
+//}
+//
+//.multiselect-dropdown .dropdown-btn .dropdown-down {
+//  border-top: 10px solid #C1331B !important;
+//  border-left: 5px solid transparent !important;
+//  border-right: 5px solid transparent !important;
+//}
+//
+//.multiselect-dropdown span {
+//  color: #C1331B !important;
+//}
+//
+//.multiselect-dropdown .dropdown-btn .selected-item {
+//  border: 1px solid #C1331B !important;
+//  margin-right: 4px;
+//  background: #C1331B !important;
+//  padding: 0 5px;
+//  color: #fff !important;
+//  border-radius: 2px;
+//  float: left;
+//}
+//
+//.center-animation-container {
+//  text-align: center !important;
+//  height: 100% !important;
+//}
+//
+//@media (min-width: 768px) {
+//  .info {
+//    padding: 90px 20px 20px !important;
+//  }
+//}
+//
+//.info {
+//  box-sizing: border-box;
+//  height: 100%;
+//  padding: 78px 5px;
+//  position: absolute;
+//  top: 100%;
+//  transition: top 2s ease 0s;
+//  width: 100%;
+//  z-index: 4;
+//  color: #fff;
+//}
+//
+//.ps .ps__rail-y:hover, .ps .ps__rail-x:focus, .ps .ps__rail-y:focus, .ps .ps__rail-x.ps--clicking, .ps .ps__rail-y.ps--clicking {
+//  background-color: transparent !important;
+//}
+//.ps .ps__rail-x:hover, .ps .ps__rail-y:hover, .ps .ps__rail-x:focus, .ps .ps__rail-y:focus, .ps .ps__rail-x.ps--clicking, .ps .ps__rail-y.ps--clicking {
+//  background-color: transparent !important;
+//}
+//ps--active-x > .ps__rail-x,
+//.ps--active-y > .ps__rail-y {
+//  display: block;
+//  background-color: transparent !important;
+//}
+//
+//.ps-content {
+//  padding: 0 20px !important;
+//}
+//
+//.airchecks-container .ps-content {
+//  padding: 0 20px !important;
+//}
+//
+//@media (max-width: 767px) {
+//  .slide-show-wrapper {
+//    z-index: 0;
+//    //margin-top: -56px;
+//  }
+//}
+//
+//.main-div-container {
+//  height: 100% !important;
+//  min-height: 100vh !important;
+//}
+//
+//.overlay-container:hover .info {
+//  top:0;
+//}
+//
+//.overlay-container:hover .overlay{
+//  opacity: .85
+//}
+//
+//.multiselect-item-checkbox input:checked + div:before {
+//  background: #C1331B !important;
+//}
+//
+//.multiselect-item-checkbox input + div:before {
+//  color: #C1331B !important;
+//  border: 2px solid #C1331B !important;
+//}
+//
+//.overlay-container {
+//  position: relative;
+//  max-width: 100%;
+//  max-height: 100%;
+//  overflow: hidden;
+//  z-index: 3;
+//}
+//
+//.overlay {
+//  height: 100%;
+//  background-size: cover !important;
+//  left: 0;
+//  opacity: 0;
+//  position: absolute;
+//  top: 0;
+//  width: 100%;
+//  z-index: -1;
+//  transition: 3s all;
+//}
+//
+//@media (max-width: 767px) {
+//  .forgot-password-text {
+//    text-align: center;
+//  }
+//}
+//
+//@media (min-width: 768px) {
+//  .d-lg-block {
+//    display: flex !important;
+//  }
+//}
+//
+//@media (max-width: 767px) {
+//  .mixes-display {
+//    padding-bottom: 50px;
+//  }
+//}
+//
+//.custom-form-control {
+//  background-color: #1F1F1F !important;
+//  border: 1px solid #1f1f1f !important;
+//  border-bottom: 1px solid #ffffff !important;
+//}
+//
+//.mat-progress-bar {
+//  height: 7px !important;
+//}
+//
+//.page-heading, .section-headings {
+//  font-family: eurostileregular !important;
+//}
+//
+//.section-headings {
+//  font-size: 20px !important;
+//}

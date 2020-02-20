@@ -1,0 +1,51 @@
+<div class="card">
+    <div class="card-header">
+        <i class="fa fa-pencil-square-o"></i> <strong>Add Country</strong>
+    </div>
+    <div [hidden]="countryAdded">
+        <form [formGroup]="countryForm" (ngSubmit)="submit()">
+            <div class="card-body">
+                <div class="form-row">
+                    <div class="form-group required col-md-12">
+                        <label for="name">Name</label>
+                        <input [ngClass]="{'is-invalid': countryForm.get('name').errors && countryForm.get('name').touched}"
+                               class="form-control"
+                               placeholder="" id="name" formControlName="name">
+                        <div class="invalid-feedback"
+                             *ngIf="countryForm.get('name').touched && countryForm.get('name').hasError('required')">
+                            Name is required
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------------------------------------------------------------->
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-primary btn-square" [disabled]="!countryForm.valid">
+                        <i class="fa fa-dot-circle-o"></i> Submit
+                    </button>&nbsp;
+                    <button type="reset" class="btn btn-danger btn-square"><i class="fa fa-ban"></i> Reset</button>
+                    <button type="reset" class="btn btn-secondary btn-square float-right" (click)="onBackToList()">
+                        <i class="fa fa-arrow-left"></i> Back to List
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div [hidden]="!countryAdded">
+        <h5>Country was successfully added</h5>
+    </div>
+</div>
+
+
+<!--&lt;!&ndash;<form [formGroup]="countryForm" (ngSubmit)="submit()">&ndash;&gt;-->
+<!--&lt;!&ndash;    <div class="container">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <h4>Add Country</h4>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="form-group">&ndash;&gt;-->
+<!--&lt;!&ndash;            <label for="country" class="col-sm-2 col-form-label">Country</label>&ndash;&gt;-->
+<!--&lt;!&ndash;            <input type="text" class="form-control" id="country" placeholder="Enter Country">&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <button type="submit" class="btn btn-primary">Submit</button>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;</form>&ndash;&gt;-->
+

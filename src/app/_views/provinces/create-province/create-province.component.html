@@ -1,0 +1,48 @@
+<div class="card">
+    <div class="card-header">
+        <i class="fa fa-pencil-square-o"></i> <strong>Add Province</strong>
+    </div>
+    <div [hidden]="provinceAdded">
+        <form [formGroup]="provinceForm" (ngSubmit)="submit()">
+            <div class="card-body">
+                <div class="form-row">
+                    <div class="form-group required col-md-6">
+                        <label for="name">Name</label>
+                        <input [ngClass]="{'is-invalid': provinceForm.get('name').errors && provinceForm.get('name').touched}"
+                               class="form-control"
+                               placeholder="" id="name" formControlName="name">
+                        <div class="invalid-feedback"
+                             *ngIf="provinceForm.get('name').touched && provinceForm.get('name').hasError('required')">
+                            Name is required
+                        </div>
+                    </div>
+
+                    <div class="form-group required col-md-6">
+                        <label class="control-label" for="countryId">Country</label>
+                        <select class="form-control" id="countryId" name="countryId" formControlName="countryId">
+                            <option>-- Select Country --</option>
+                            <option *ngFor="let country of countries" class="form-control" value={{country.id}}>
+                                {{country.name}}
+                            </option>
+                        </select>
+                        <div *ngIf="provinceForm.get('countryId').touched && provinceForm.get('countryId').hasError('required')"
+                             class="invalid-feedback">
+                            Country is required
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------------------------------------------------------------->
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-primary btn-square" [disabled]="!provinceForm.valid">
+                        <i class="fa fa-dot-circle-o"></i> Submit
+                    </button>&nbsp;
+                    <button type="reset" class="btn btn-danger btn-square"><i class="fa fa-ban"></i> Reset</button>
+                    <button type="reset" class="btn btn-secondary btn-square float-right" (click)="onBackToList()"><i class="fa fa-arrow-left"></i> Back to List</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div [hidden]="!provinceAdded">
+        <h5>Province was successfully added</h5>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+// Here you can add other styles
+body {
+  font-family: "Nunito";
+}
+.app-header .nav-item .nav-link {
+  padding-top: 0;
+  padding-bottom: 0;
+  background: 0;
+  border: 0;
+  font-weight: bold;
+  font-size: 17px;
+  color: #244A9D;
+}
+
+ng-select>div {
+  border: 1px solid #ccc !important;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 100%
+}
+
+ng-select>div>div.single {
+  display: flex;
+  height: 28px !important;
+  width: 100%
+}

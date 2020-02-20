@@ -1,0 +1,28 @@
+<form  [formGroup]="crop-varietyForm" (ngSubmit)="submit()">
+    <div class="container">
+      <div>
+        <h2>Add Crop variety</h2>
+      </div>
+      <div class="form-group row">
+        <label for="name" class="col-sm-2 col-form-label">Name</label>
+        <div class="col-sm-10">
+          <input type="text" formControlName="name" class="form-control" id="name" placeholder="Enter crop variety Name">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="crop" class="col-sm-2 col-form-label">Crop</label>
+        <div class="col-sm-10">
+          <input type="text" formControlName="cropId" class="form-control" id="crop" placeholder="Enter Crop Name">
+        </div>
+      </div>
+   
+   
+      <div class="form-group row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-10">
+          <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        </div>
+      </div>
+    </div>
+   </form>
+   
